@@ -1,5 +1,5 @@
 {% set name = "gemgis" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3940d96b1b7629b2e7184d5314a97450b5bb1c20cd4cec6f79cd95973fd74c89
+  sha256: 26dfd3101b71a2f3d75d47b6b6cbf58e168dd5ddc331b3f9cc31518a8d297eef
 
 build:
   number: 0
