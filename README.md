@@ -1,11 +1,11 @@
-About gemgis
-============
+About gemgis-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gemgis-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/cgre-aachen/gemgis
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gemgis-feedstock/blob/main/LICENSE.txt)
 
 Summary: GemGIS is a Python-based, open-source spatial data processing library. It is capable of preprocessing spatial data such as vector data raster data, data obtained from online services and many more data formats. GemGIS wraps and extends the functionality of packages known to the geo-community such as GeoPandas, Rasterio, OWSLib, Shapely, PyVista, Pandas, and NumPy.
 
