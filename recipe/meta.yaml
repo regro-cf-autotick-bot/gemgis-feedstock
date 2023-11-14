@@ -1,34 +1,38 @@
 {% set name = "gemgis" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 40084fb753ec7a40f2e0792257a86ef216b234b941de2ea35b47e983dc5956fc
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GemGIS-{{ version }}.tar.gz
+  sha256: 19b99d26ea1ef4ddcc7c2dab9d266673095dabde1a8943614937ad1116911f98
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
+    - python >=3.8
+    - setuptools >=68.1.2
+    - setuptools-scm >=6.2
     - pip
-    - python >=3.6
   run:
+    - python >=3.8
     - geopandas
-    - pygeos
-    - python >=3.6
-    - pyvista
     - rasterio
+    - pyvista
 
 test:
   imports:
     - gemgis
-    - tests
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/cgre-aachen/gemgis
