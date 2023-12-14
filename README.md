@@ -149,6 +149,3 @@ Feedstock Maintainers
 
 * [@AlexanderJuestel](https://github.com/AlexanderJuestel/)
 
-
-<!-- dummy commit to enable rerendering -->
-
